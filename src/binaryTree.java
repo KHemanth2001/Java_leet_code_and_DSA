@@ -118,21 +118,27 @@ public class binaryTree {
         int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
-//        System.out.println(root.data);
-//        tree.preOrder(root);
-//        System.out.println();
-//        tree.inOrder(root);
-//        System.out.println();
-//        tree.postOrder(root);
-//        System.out.println("level order");
-//        tree.levelOrder(root);
-//        int cnt=tree.countNodes(root);
-//        int sum=tree.sumOfNodes(root);
-//        System.out.println(cnt);
-//        System.out.println(sum);
-//
-//        int h=tree.heightOfNodes(root);
-//        System.out.println(h);
+        System.out.println(root.data);
+
+        tree.preOrder(root);
+        System.out.println();
+
+        tree.inOrder(root);
+        System.out.println();
+
+        tree.postOrder(root);
+
+        System.out.println("level order");
+        tree.levelOrder(root);
+
+        int cnt=tree.countNodes(root);
+        System.out.println(cnt);
+
+        int sum=tree.sumOfNodes(root);
+        System.out.println(sum);
+
+        int h=tree.heightOfNodes(root);
+        System.out.println(h);
 
         int d=tree.diameter(root);
         System.out.println(d);
